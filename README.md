@@ -37,3 +37,17 @@ sed -n '15,30p' /etc/passwd  | cut -d ':' -f 5 | cut -c 1-4
 
 
 SHELL VARIABLES :
+
+$? --> Exit status of the last command
+$$ --> PID of the current shell. For shell scripts, this is the process ID under which they are executing.
+$! --> PID of the last background command/process.
+$# --> Number of arguments passed to the shell script
+$_ --> Last argument supplied in the last command.
+$0 --> Current file name 
+$1 --> First argument passed to the script
+$2 --> 2nd argument passed to the script.
+$* --> This parameter gives all arguments passed to the shell script separated by the space
+$@ --> This parameter gives all arguments passed to the shell script separated by the space
+"$*" special parameter takes the entire list as one argument with spaces between i.e.if script receives 3 arguements then "$*" --> "$1 $2 $3"
+"$@" special parameter takes the entire list and separates it into separate individual arguments i.e. if script receives 3 arguements then "$@" --> "$1" "$2" "$3"
+
