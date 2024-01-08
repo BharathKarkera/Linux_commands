@@ -49,5 +49,5 @@ $2 --> 2nd argument passed to the script.
 $* --> This parameter gives all arguments passed to the shell script separated by the space
 $@ --> This parameter gives all arguments passed to the shell script separated by the space
 "$*" special parameter takes the entire list as one argument with spaces between i.e.if script receives 3 arguements then "$*" --> "$1 $2 $3"
-"$@" special parameter takes the entire list and separates it into separate individual arguments i.e. if script receives 3 arguements then "$@" --> "$1" "$2" "$3"
+"$@" special parameter takes the entire list and separates it into separate individual arguments i.e. if script receives 3 arguements then "$@" --> "$1" "$2" "$3".
 
